@@ -1,0 +1,33 @@
+<template name="navbar">
+    <div class="masthead clearfix">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <p>
+                        <img class="pull-left smallImage" src="/images/logo.png"/>
+                        <a class="navbar-brand" href="/">Meteor Chat Demo</a>
+                    </p>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="masthead-nav">
+                        <ul class="nav navbar-nav navbar-left">
+                            {{> loginButtons align="right"}}
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="{{ activeIfTemplateIs 'chat' }}"><a href="/chat">chat</a></li>
+                            <li class="{{ activeIfTemplateIs 'api' }}"><a href="/api">api</a></li>
+                            <li class="{{ activeIfTemplateIs 'events' }}"><a href="/events">events</a></li>
+                            <li class="{{ activeIfTemplateIs 'contacts' }}"><a href="/contacts">contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</template>
