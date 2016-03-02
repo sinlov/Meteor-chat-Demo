@@ -1,6 +1,15 @@
 # Meteor-chat-Demo
 
-## Use Flow Router and blaze-layout
+## Use Package
+
+|Package|ForWhat|
+|---|---|
+|kadira:flow-router|Router|
+|kadira:blaze-layout|Router Management|
+|accounts-password|Template of Accounts|
+|accounts-ui|UI of accounts-password|
+|twbs:bootstrap|bootstrap support|
+|peppelg:bootstrap-3-modal|bootstrap3 modal|
 
 ## Run
 
@@ -8,9 +17,9 @@
 meteor
 ```
 
-# Buy
+# Bug
 
-CSS desing bug.
+CSS design bug.
 
 License
 --------
