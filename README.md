@@ -11,15 +11,47 @@
 |twbs:bootstrap|bootstrap support|
 |peppelg:bootstrap-3-modal|bootstrap3 modal|
 
+## Code Structure
+
+```
+.
+├── client				# client code
+│   ├── helpers			# client config and utils
+│   ├── includes		# HTML public templates
+│   ├── layout			# Flow blaze-layout
+│   ├── notFound		# 404 not Found
+│   ├── stylesheets		# style
+│   └── templates		# for work
+│       └── chat		# chat work
+├── lib
+│   └── collections		# router and collections
+├── public				# public resource
+│   └── images
+└── server				# server code
+```
+
+# How to use
+
 ## Run
 
 ```sh
 meteor
 ```
 
+If it can't run, please check you network
+
+## 
+
 # Bug
 
+
+## UI bug
+
 CSS design bug.
+
+# TODO
+
+Support RESTful API
 
 License
 --------
