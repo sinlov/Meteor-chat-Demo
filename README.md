@@ -10,6 +10,7 @@
 |accounts-ui|UI of accounts-password|
 |twbs:bootstrap|bootstrap support|
 |peppelg:bootstrap-3-modal|bootstrap3 modal|
+|http|Http support|
 
 ## Code Structure
 
