@@ -3,7 +3,7 @@
  */
 
 Template.footer.helpers({
-    release: function() {
+    release: function () {
         return Meteor.release;
     }
 });

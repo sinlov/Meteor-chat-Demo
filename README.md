@@ -16,19 +16,19 @@
 
 ```
 .
-├── client				# client code
-│   ├── helpers			# client config and utils
-│   ├── includes		# HTML public templates
-│   ├── layout			# Flow blaze-layout
-│   ├── notFound		# 404 not Found
-│   ├── stylesheets		# style
-│   └── templates		# for work
-│       └── chat		# chat work
-├── lib
-│   └── collections		# router and collections
-├── public				# public resource
+├── client					# client code
+│   ├── helpers				# client config and utils
+│   ├── includes			# HTML public templates
+│   ├── layout				# Flow blaze-layout
+│   ├── notFound			# 404 not Found
+│   ├── stylesheets			# style
+│   └── templates			# for work
+│       └── chat			# chat work
+├── lib						# router and collections
+│   └── collections
+├── public					# public resource
 │   └── images
-└── server				# server code
+└── server					# server code
 ```
 
 # How to use
@@ -39,9 +39,11 @@
 meteor
 ```
 
-If it can't run, please check you network
+If it can't run, please check you network.
 
-## 
+## AutoRestData
+
+code by `server\reset_data.js` it will auto reset server `Messages` and `Rooms` data when meteor start.
 
 # Bug
 

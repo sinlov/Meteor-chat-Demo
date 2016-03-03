@@ -1,26 +1,27 @@
 <template name="chat">
     <div class="container">
 
-      {{#if currentUser}}
-          <div class="row-fluid">
-              <div class="span12 well">
-                {{> input}}
-              </div>
-          </div>
-          <div class="row-fluid">
-              <div class="span8 well">
-                {{> messages}}
-              </div>
-              <div class="span4 well">
-                {{> rooms}}
-              </div>
-          </div>
-      {{else}}
-          <div class="hero-unit">
-              <p>Welcome to MeteorChat</p>
-              <h1>Please login!</h1>
-          </div>
-      {{/if}}
+        {{#if currentUser}}
+            <div class="row-fluid">
+                <div class="span12 well">
+                    {{> input}}
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span8 well">
+                    {{> messages}}
+                </div>
+                <div class="span4 well">
+                    {{> rooms}}
+                </div>
+            </div>
+        {{else}}
+            <div class="hero-unit">
+                <p>Welcome to MeteorChat</p>
+
+                <h1>Please login!</h1>
+            </div>
+        {{/if}}
 
     </div>
 </template>
@@ -32,26 +33,28 @@
 
 <template name="messages">
     <h4>Room: {{roomname}}</h4>
+
     <div id="messages" style="background-color: #ffffff; border: 1px solid darkgray; max-height: 200px; overflow: auto">
-      {{#each messages}}
-        {{> message}}
-      {{/each}}
+        {{#each messages}}
+            {{> message}}
+        {{/each}}
     </div>
 </template>
 
 <template name="message">
-    <p><strong>{{user}}</strong> <span style="font-size: 0.7em; color: darkgray">({{timestamp}})</span>: <i>{{msg}}</i></p>
+    <p><strong>{{user}}</strong> <span style="font-size: 0.7em; color: darkgray">({{timestamp}})</span>: <i>{{msg}}</i>
+    </p>
 </template>
 
 <template name="rooms">
     <h4>Join a room:</h4>
     <ul>
-      {{#each rooms}}
-        {{> room}}
-      {{/each}}
+        {{#each rooms}}
+            {{> room}}
+        {{/each}}
     </ul>
 </template>
 
 <template name="room">
-    <li style="cursor: pointer; {{roomstyle}}">{{roomname}}</li>
+    <li style="cursor: pointer; {{roomStyle}}">{{roomname}}</li>
 </template>
