@@ -1,5 +1,17 @@
 # Meteor-chat-Demo
 
+# Notes
+
+Update to new version of meteor
+
+- version 1.4.1.3
+
+```sh
+# run meteor behind
+meteor update
+```
+
+
 ## Use Package
 
 |Package|ForWhat|
